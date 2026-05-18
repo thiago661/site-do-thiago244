@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Gamer</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial;
+    }
+
+    body{
+      background:#0f0f0f;
+      color:white;
+    }
+
+    header{
+      background:#1a1a1a;
+      padding:20px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header h1{
+      color:#00ff88;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#00ff88;
+    }
+
+    .hero{
+      height:90vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      text-align:center;
+      background:linear-gradient(black,#111,#222);
+    }
+
+    .hero h2{
+      font-size:60px;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:20px;
+      width:70%;
+      margin-bottom:30px;
+    }
+
+    .hero button{
+      padding:15px 40px;
+      border:none;
+      background:#00ff88;
+      color:black;
+      font-size:20px;
+      border-radius:10px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .hero button:hover{
+      transform:scale(1.1);
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      padding:50px;
+    }
+
+    .card{
+      background:#1a1a1a;
+      padding:30px;
+      border-radius:15px;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#00ff88;
+    }
+
+    .contador{
+      text-align:center;
+      padding:50px;
+    }
+
+    .contador h2{
+      font-size:50px;
+      margin-bottom:20px;
+    }
+
+    footer{
+      background:#111;
+      text-align:center;
+      padding:30px;
+      margin-top:50px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>GustaDev</h1>
+
+    <nav>
+      <a href="">Home</a>
+      <a href="">Projetos</a>
+      <a href="">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+
+    <h2>Meu Site em JavaScript</h2>
+
+    <p>
+      Site completo usando HTML, CSS e JavaScript.
+    </p>
+
+    <button onclick="clicou()">
+      Entrar
+    </button>
+
+  </section>
+
+  <section class="cards">
+
+    <div class="card">
+      <h3>HTML</h3>
+      <p>
+        Estrutura do site.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>CSS</h3>
+      <p>
+        Visual moderno e animações.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>JavaScript</h3>
+      <p>
+        Interações e funções.
+      </p>
+    </div>
+
+  </section>
+
+  <section class="contador">
+
+    <h2 id="numero">0</h2>
+
+    <button onclick="somar()">
+      Aumentar
+    </button>
+
+  </section>
+
+  <footer>
+    <p>Site criado por você 🚀</p>
+  </footer>
+
+  <script>
+
+    function clicou(){
+      alert("Bem-vindo ao site!")
+    }
+
+    let numero = 0
+
+    function somar(){
+
+      numero++
+
+      document.getElementById("numero").innerHTML = numero
+
+    }
+
+  </script>
+
+</body>
+</html>
