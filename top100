@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>TOP100 FM</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #111;
+            color: white;
+        }
+
+        header {
+            background: #ff0000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .player {
+            text-align: center;
+            margin: 40px;
+        }
+
+        .btn {
+            background: #00ff88;
+            color: black;
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .section {
+            padding: 20px;
+        }
+
+        .card {
+            background: #222;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎧 TOP100 FM</h1>
+    <p>A melhor rádio online</p>
+</header>
+
+<div class="player">
+    <button class="btn">▶ OUVIR AGORA</button>
+</div>
+
+<div class="section">
+    <h2>📻 Programação</h2>
+
+    <div class="card">
+        <p>Manhã Hits - 08:00</p>
+    </div>
+
+    <div class="card">
+        <p>Tarde Mix - 14:00</p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>📰 Notícias</h2>
+
+    <div class="card">
+        <p>Nova música bombando nas rádios!</p>
+    </div>
+</div>
+
+</body>
+</html>

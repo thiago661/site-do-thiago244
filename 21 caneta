@@ -1,0 +1,36 @@
+class Caneta:
+    def __init__(self, cor):
+        self.cor = cor
+        self.tampada = True
+
+        # Estrutura para definir a cor da escrita usando a biblioteca Rich
+        match cor.lower().strip():
+            case 'azul':
+                self.escolha = 'blue'
+            case 'vermelho' | 'vermelha':
+                self.escolha = 'red'
+            case 'verde':
+                self.escolha = 'green'
+            case _:
+                self.escolha = 'white'
+
+    def escrever(self, msg):
+        if self.tampada:
+            print(f'[{self.escolha}]A caneta está tampada.[/]')
+        else:
+            print(f'[{self.escolha}]{msg}[/]', end='')
+
+def tampar(self):
+self.tampada = True
+
+def destampar(self):
+self.tampada = False
+
+    def quebrar_linha(self, qtd=1):
+        print('\n' * qtd, end='')
+
+Pontos principais do código:
+
+__init__ (04:12): Inicializa o atributo de cor e o estado tampada como True.
+match (04:45): Utilizado para mapear as cores informadas em português para os nomes de cores reconhecidos pela biblioteca Rich.
+escrever (06:18 / 08:23): Verifica se a caneta está aberta antes de imprimir o texto com a cor definida.

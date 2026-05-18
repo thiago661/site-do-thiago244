@@ -1,0 +1,16 @@
+class churasco:
+    #atributo de classe
+    comsumo_padrao = 0.400 # cada pessoa come em media 400g de carne
+    preço_kg = 82.40 # cada kg de carne custa r$82.40
+
+def__init__(self, titulo, qtd):
+  #atributo de instancia 
+  self.titulo = titulo
+  self.titulo = quant
+ 
+def__str__(self titulo, quant):
+    retunr f"esse e {self.titular}com {self.partisipantes} pessoas partisipando."
+
+
+c1 = churasco(churras dos amidos",15)
+              print(c1)

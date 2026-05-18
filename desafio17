@@ -1,0 +1,24 @@
+from rich import print
+from rich.panel import Panel
+
+class Produto:
+
+    def __init__(self, nome, preco):
+        self.nome = nome
+        self.preco = preco
+
+    def __str__(self):
+        return f"Produto: {self.nome}, Preço: R${self.preco:.2f}"
+
+    def etiqueta(self):
+        conteudo = f"{self.nome}\nR${self.preco:.2f}"
+        print(Panel(conteudo, title="Produto"))
+
+
+# criando produtos
+p1 = Produto(nome="iPhone 17 Pro Max", preco=25000.85)
+p2 = Produto(nome="Notebook Gamer", preco=8000)
+
+# mostrando etiqueta
+p1.etiqueta()
+p2.etiqueta()

@@ -1,0 +1,21 @@
+# declaraçao de classe
+class gafanhoto
+    def __init__(self):# metado contrutor
+       # atrbutos de instancia
+        self.nome = ""
+        self.idade = 0
+
+ # metado de instancia
+ def aniversario(self):
+    self.idade  = self.idade+ 1
+    
+    def mensagen(self):
+     return f"(self nome) e gafanhoto(a) e tem (self.idade) anos de idade
+
+    # declaracaode de obejetivo
+    g1 = gafanhoto()
+    g1.nome = "maria"
+    g1.idade = 17
+    print(g1.mensagen())
+    g1 .aniversario()
+    
